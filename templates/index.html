@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Concrete Strength Predictor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow-lg p-4">
+            <h2 class="text-center mb-4">Concrete Strength Predictor</h2>
+            <form action="/predict" method="post">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label>Cement (kg/m³)</label>
+                        <input type="number" step="0.01" name="cement" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Slag (kg/m³)</label>
+                        <input type="number" step="0.01" name="slag" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Fly Ash (kg/m³)</label>
+                        <input type="number" step="0.01" name="flyash" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Water (kg/m³)</label>
+                        <input type="number" step="0.01" name="water" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Superplasticizer (kg/m³)</label>
+                        <input type="number" step="0.01" name="superplasticizer" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Coarse Aggregate (kg/m³)</label>
+                        <input type="number" step="0.01" name="coarseagg" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Fine Aggregate (kg/m³)</label>
+                        <input type="number" step="0.01" name="fineagg" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Age (days)</label>
+                        <input type="number" name="age" class="form-control" required>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary px-5">Predict Strength</button>
+                </div>
+            </form>
+            {% if prediction_text %}
+            <div class="alert alert-success mt-4 text-center" role="alert">
+                {{ prediction_text }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
