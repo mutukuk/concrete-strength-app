@@ -10,7 +10,7 @@ This project is part of a data science capstone where the goal is to assist civi
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Python** (3.x)  
 - **Flask** – lightweight backend web framework  
@@ -23,11 +23,11 @@ This project is part of a data science capstone where the goal is to assist civi
 
 ##  Features
 
-- 📊 Predict concrete compressive strength in real time  
-- 🧪 Input key concrete mix ingredients (cement, slag, water, etc.)  
-- 💻 Responsive, mobile-friendly Bootstrap form UI  
-- 🧠 Machine learning model trained on real construction data  
-- 🔒 Clean structure, input validation, and error handling  
+-  Predict concrete compressive strength in real time  
+-  Input key concrete mix ingredients (cement, slag, water, etc.)  
+-  Responsive, mobile-friendly Bootstrap form UI  
+-  Machine learning model trained on real construction data  
+-  Clean structure, input validation, and error handling  
 
 ---
 
