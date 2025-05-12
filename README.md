@@ -119,7 +119,7 @@ Then open your browser and visit:
 
 - Built as a capstone project for **Moringa School**  
 - Special thanks to teammates and reviewers  
-- Developed and led by **Kelvin Mutuku** 
+- Developed and led by **Group 7 Dev Team** 
 
 ---
 
